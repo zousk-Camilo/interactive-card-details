@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 68%, 11%);
+--Red: hsl(0, 100%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body{
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+
+}
+
+
+.card__front{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 440px;
+    height: 240px;
+    background-image: url(./images/bg-card-front.png);
+    border-radius: 10px;
+}
+
+.circle__wrap{
+    margin: 30px;
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 18px;
+}
+
+.white__circle{
+    position: relative;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.empty__circle{
+    border: 1.5px solid var(--White);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.card__number{
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--White);
+    letter-spacing: 5px;
+}
+
+.name__date__container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.card__name{
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--White);
+}
+
+.card__date{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--White);
+
+}
+
+
+/*BACK CARD*/
+
+
+.card__back{
+    overflow: hidden;
+    position: absolute;
+    width: 440px;
+    height: 240px;
+    top: 350px;
+    left: 200px;
+    background-image: url(./images/bg-card-back.png);
+    border-radius: 10px;
+}
+
+.back__cvc{
+    position: relative;
+    top: 110px;
+    left: 350px;
+    color: var(--White);
+    letter-spacing: 2px;
+}
+
+/*form*/
+
+.form__wraper{
+    
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    left: 800px;
+    top: 150px;
+}
+.form__cardholder__name{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.cardholder__input__name{
+    width: 380px;
+    height: 50px;
+    border-radius: 8px;
+    border-style: hidden;
+    border: 1px solid var(--Light-grayish-violet);
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--Dark-grayish-violet);
+}
+
+input[type = "text"]:focus{
+    outline: none;
+    border-style: none;
+    border: 1px solid var(--Light-grayish-violet);
+}
+
+.from__cardholder__number{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.cardholder__input__number{
+    width: 380px;
+    height: 50px;
+    border-radius: 8px;
+    border-style: hidden;
+    border: 1px solid var(--Light-grayish-violet);
+    font-size: 18px;
+    padding: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--Dark-grayish-violet);
+}
+
+.error__message__number{
+    color: var(--Red);
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.error__message__number-active{
+    display: block;
+}
+
+.exp-date{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+.year__month__wraper{
+    display: flex;
+    gap: 10px;
+}
+
+
+.exp-date__input__month{
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid var(--Light-grayish-violet);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.exp-date__input__year{
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid var(--Light-grayish-violet);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cvc__name{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.input__cvc{
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid var(--Light-grayish-violet);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.year-month-cvv__wraper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 67px;
+    margin-top: 8px;
+}
+
+.cvc-exp{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap:100px;
+}
+
+.submit{
+    margin-top: 25px;
+    width: 380px;
+    height: 55px;
+    background-color: var(--Very-dark-violet);
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: var(--Dark-grayish-violet);
+    cursor: pointer;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 5px;
+    left: 550px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*complete state*/
+
+.wrap__state__complete-modal{
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.continue{
+    width: 380px;
+    height: 55px;
+    background-color: var(--Very-dark-violet);
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.continue:hover{
+    background-color: var(--Dark-grayish-violet);
+    cursor: pointer;
+}
+
+/*Media Screen*/
+
+
+@media screen and (max-width: 800px){
+    body{
+        background-image: url(./images/bg-main-mobile.png);
+        background-size: 100% 50vw;
+    }
+
+    .card__front{
+        position: absolute;
+        top: 170px;
+        left: 110px;
+        width: 440px;
+        height: 240px;
+        background-image: url(./images/bg-card-front.png);
+        border-radius: 10px;
+    }
+
+    .card__back{
+        z-index: -1;
+        overflow: hidden;
+        position: absolute;
+        width: 440px;
+        height: 240px;
+        top: 30px;
+        left: 180px;
+        background-image: url(./images/bg-card-back.png);
+        border-radius: 10px;
+    }
+
+    .form__wraper{
+        width: 400px;
+        height: 380px;
+        position: absolute;
+        left: 130px;
+        top: 450px;
+    }
+
+    .attribution { 
+
+        display: none;
+        
+    }
+
+
+    .wrap__state__complete-modal{
+        width: 400px;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+    
+    
+
+}

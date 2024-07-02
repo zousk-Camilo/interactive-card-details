@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+
+
+
+  <div class="card__front">
+    <div class="circle__wrap">
+      <div class="white__circle"></div>
+      <div class="empty__circle"></div>
+    </div>
+    <div class="card__number">0000 0000 0000 0000</div>
+    <div class="name__date__container">
+      <div class="card__name">Jane Appleseed</div>
+      <div class="card__date">00/00</div>
+    </div>
+  </div>
+
+  <div class="card__back">
+    <div class="back__cvc">000</div>
+  </div>
+
+
+
+  <div class="form__wraper">
+      <div class="form__cardholder__name">Cardholder Name</div>
+      <input type="text" class="cardholder__input__name" placeholder="e.g. Jane Appleseed">
+
+      <div class="from__cardholder__number">Card Number</div>
+      <input type="text" class="cardholder__input__number" placeholder="e.g. 1234 5678 9123 0000">
+      <p class="error__message__number">Wrong format, number only</p>
+
+
+      <div class="exp-date__cvv__wraper">
+        <div class="cvc-exp">
+          <div class="exp-date">Exp. Date (MM/YY)</div>
+          <div class="cvc__name">CVC</div>
+        </div>
+        <div class="year-month-cvv__wraper">
+          <div class="year__month__wraper">
+            <input type="text" class="exp-date__input__month" placeholder="MM">
+            <input type="text" class="exp-date__input__year" placeholder="YY">
+          </div>
+          
+          <div class="cvv__name-input__wraper">
+            
+            <input type="text" class="input__cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+        
+      </div>
+
+      <button class="submit" value="Confirm">Confirm</button>
+
+
+<input type="submit" value="">
+      <!--state complete-->
+
+  </div>
+
+  
+
+
+
+  <!-- Completed state start -->
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Camilo Murt Tamayo</a>.
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
