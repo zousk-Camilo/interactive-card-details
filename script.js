@@ -118,7 +118,7 @@ function handleValidation(mask, key, arr){
 
 
 $submit.addEventListener('click', e=>{
-    if(fieldValidations.name && fieldValidations.number && $inputCVC.value.length === 3 && $inputMonth.value.length != 0 && $inputYear.value.length != 2){
+    if(fieldValidations.name && fieldValidations.number && $inputCVC.value.length === 3 && $inputMonth.value != '' && $inputYear.value != ''){
         sendData();
     }
     
